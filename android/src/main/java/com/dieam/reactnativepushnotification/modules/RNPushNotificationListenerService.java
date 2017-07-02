@@ -105,13 +105,13 @@ public class RNPushNotificationListenerService extends GcmListenerService {
             jsDelivery.notifyRemoteFetch(bundle);
         }
 
-        Log.v(LOG_TAG, "sendNotification: " + bundle);
+        //Log.v(LOG_TAG, "sendNotification: " + bundle);
 
-        if (!isForeground) {
-            Application applicationContext = (Application) context.getApplicationContext();
-            RNPushNotificationHelper pushNotificationHelper = new RNPushNotificationHelper(applicationContext);
-            pushNotificationHelper.sendToNotificationCentre(bundle);
-        }
+        //if (!isForeground) {
+        //    Application applicationContext = (Application) context.getApplicationContext();
+        //    RNPushNotificationHelper pushNotificationHelper = new RNPushNotificationHelper(applicationContext);
+        //    pushNotificationHelper.sendToNotificationCentre(bundle);
+        //}
     }
 
     private boolean isApplicationInForeground() {
